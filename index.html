@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RSA Encryption</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <h1>RSA Encryption</h1>
+        
+        <div class="section">
+            <h2>Encriptar Mensaje</h2>
+            <div class="form-group">
+                <label for="p-value">Valor de p:</label>
+                <input type="number" id="p-value">
+            </div>
+            <div class="form-group">
+                <label for="q-value">Valor de q:</label>
+                <input type="number" id="q-value">
+            </div>
+            <div class="form-group">
+                <label for="mensaje-input">Mensaje a encriptar:</label>
+                <input type="text" id="mensaje-input">
+            </div>
+            <button id="encriptar-btn">Encriptar</button>
+        </div>
+
+        <div class="section-resultado" >
+            <div id="resultado-encriptado" class="result" style="display: none;">
+                <h3>Resultados:</h3>
+                <p id="n-value"></p>
+                <p id="phi-value"></p>
+                <p id="d-value"></p>
+                <p id="e-value"></p>
+                <h3>Mensaje encriptado:</h3>
+                <p id="mensaje-encriptado"></p>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2>Desencriptar Mensaje</h2>
+            <div class="form-group">
+                <label for="mensaje-encriptado-input">Mensaje encriptado:</label>
+                <input type="text" id="mensaje-encriptado-input">
+            </div>
+            <button id="desencriptar-btn">Desencriptar</button>
+            <div id="resultado-desencriptado" class="result" style="display: none;">
+                <h3>Mensaje desencriptado:</h3>
+                <p id="mensaje-desencriptado"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>© 2023 RSA Encryption. | Dixi & Joge | Todos los derechos reservados.</p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
